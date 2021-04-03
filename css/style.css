@@ -1,0 +1,118 @@
+/************************* 
+Global selector/ CSS reset
+**************************/
+
+* {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+
+/******
+Layout 
+******/
+
+body {
+    font-family: 'Sarabun', sans-serif;
+    height: 100%;
+    font-size: 16px;
+    background: black;
+    text-align: center;
+}
+
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    justify-content: center;
+    margin: 0;
+    padding: 1em;
+}
+
+.section-container {
+    padding-top: 3em;
+}
+
+/*********
+Topography 
+**********/
+
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 0 1em;
+    padding: 1.3em 0;
+    line-height: 1.8rem;
+    font-weight: bolder;
+}
+
+.wiki-text {
+    margin-bottom: 5em;
+}
+
+img {
+    max-width: 100%;
+    border: 3px solid black;
+}
+
+.header-title {
+    color: white;
+}
+.bio-summary > h1 {
+    padding-top: .1em;
+}
+
+/* Media queries */
+
+/* Adjusting header title placement for larger screens */
+@media (min-width:768px) {
+    .header-title {
+        text-align: right;
+        position: relative;
+        padding-top: 10em;
+        padding-right: 2.5em;
+        color:black;
+    }
+
+    .header-title > h2 {
+        font-size: .9rem ;
+        padding-left: 35em;
+    }
+}
+
+/*************
+Header section 
+*************/
+
+.hero {
+    background-image: url("http://www.trbimg.com/img-5b94059e/turbine/ct-xpm-2013-11-28-ct-malcolm-x-third-world-press-met-20131128");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
+    min-height: 95vh;
+}
+
+/***************
+Bio info section 
+****************/
+
+.bio-info {
+    background-color: rgb(160, 160, 160);
+    border-radius: 20px;
+    padding-bottom: 2em;
+}
